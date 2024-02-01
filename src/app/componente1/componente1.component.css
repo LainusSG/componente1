@@ -1,5 +1,15 @@
 .example-form-field {
-    width: 800px;
-    margin-left:150px;
+    width: 80%;
+    margin-left:5%;
    
+  }
+  .example-form-field2 {
+    width: 80%;
+    margin-left:5%;
+   
+  }
+
+  .u-section-1 .u-form-20 {
+    height: 339px;
+    margin: 19px 20px 0 calc(((100% - 1140px) / 2) + 502px)
   }
