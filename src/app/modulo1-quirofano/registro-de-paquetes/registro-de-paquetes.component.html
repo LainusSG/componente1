@@ -247,20 +247,12 @@
           </div>
             <a class="u-dialog-link u-border-none u-btn u-button-style u-custom-color-3 u-hover-custom-color-6 u-text-hover-white" style="margin-right: 5%;">Agregar</a>
           </div>
-         
-  
-  
-  
   
           <h1>
             <span class="u-text-custom-color-3"  style="font-size: 1.5rem; margin-left:5%;">{{value2}} </span>
           </h1>
           <p style="margin-left:5%;">Contenido:</p>
-  
-  
-  
-  
-  
+
   
           <div style="width: 90%; margin-left: 5%; margin-right: 5px;">
           <mat-table [dataSource]="dataSource4" class="mat-elevation-z8" >
@@ -309,22 +301,20 @@
    .imaencenter{
       align-items: center;
       margin: auto;
-      width: 150px;
+      width: 200px;
       height: 150px;
     }
   </style>
 
-        <br>
-        <div class="u-form u-form-20" >
-          
-          <div class="u-file-input-wrapper">
-          <a class="u-btn u-button-style u-upload-button u-custom-color-3 u-hover-custom-color-6">Subir archivo</a>
-          <span class="u-file-group">
-            <input type="file" name="Examinar" accept="image/*" onchange="previewImage(event, '#imgPreview')">
-          </span>
-          </div>
-                
-      </div>
+
+
+
+      <div class="file-select u-border-none u-btn u-button-style u-custom-color-3  u-text-hover-white u-form u-form-20" id="src-file1" >
+      
+        <input type="file" name="Examinar" accept="image/*" onchange="previewImage(event, '#imgPreview')">
+           
+      </div> 
+            
   
   
   
