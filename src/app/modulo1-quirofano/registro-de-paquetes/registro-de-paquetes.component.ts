@@ -46,6 +46,12 @@ export class REGISTRODEPAQUETESComponent {
   value = 'Set 1';
   value2= this.value;
 
+  value3 = '0';
+  value3_1= this.value3;
+  
+  value4 = '1';
+  value4_1= this.value4;
+
   panelOpenState = false;
   displayedColumns: string[] = ['id', 'Nombre', 'Descripcion', 'Marca', 'Cantidad', 'Caducidad'];
   

@@ -248,11 +248,55 @@
             <a class="u-dialog-link u-border-none u-btn u-button-style u-custom-color-3 u-hover-custom-color-6 u-text-hover-white" style="margin-right: 5%;">Agregar</a>
           </div>
   
-          <h1>
-            <span class="u-text-custom-color-3"  style="font-size: 1.5rem; margin-left:5%;">{{value2}} </span>
-          </h1>
-          <p style="margin-left:5%;">Contenido:</p>
 
+          <div style="width: 100%; display: flex;">
+            <div style="width: 50%; margin-left:5%; margin-right: 5%;">
+              <h1>
+                <span  style="font-size: 1rem; ">Indica la cantidad en almacén: </span>
+              </h1>
+            </div>
+            <div style=" width: 16%; margin-left:1%; margin-right: 5%;">
+              <label >Mínimo:</label><br>
+              <mat-form-field style=" width: 100%">
+                <input matInput type="number" min="0"  step="1" value="1" [(ngModel)]="value3">
+              </mat-form-field>
+            </div>
+            <div style=" width: 16%; margin-left:1%; margin-right: 3%; ">
+              <label >Máximo:</label><br>
+              <mat-form-field style=" width: 100%">
+                <input matInput type="number" min="1"  step="1" value="1"  [(ngModel)]="value4">
+              </mat-form-field>
+            </div>
+            <div style=" width: 17%; margin-left:1%; margin-right: 5%;">
+            <button   aria-label="submit" (click)="value3_1=value3" (click)="value4_1=value4" class="u-dialog-link u-border-none u-btn u-button-style u-custom-color-3 u-hover-custom-color-6 u-text-hover-white" style="margin-right: 5%;">Agregar</button>
+          </div>
+          </div>
+
+
+
+        <div style="width: 100%; display: flex; margin-left:5%;">
+
+          <div style="width: 33.4%;">
+          <h1>
+            <span class="u-text-custom-color-3"  style="font-size: 1.5rem;  font-weight: 700;">{{value2}} </span>
+          </h1>
+        </div>
+
+        <div style="width: 33.3%;">
+          <h1>
+            <span class="u-text-custom-color-3"  style="font-size: 1.5rem;  font-weight: 700;">Mínimo de Set´s: {{value3_1}} </span>
+          </h1>
+        </div>
+
+        <div style="width: 33.3%; margin-right: 5%;" >
+          <h1>
+            <span class="u-text-custom-color-3"  style="font-size: 1.5rem;  font-weight: 700;">Máximo de Set´s: {{value4_1}} </span>
+          </h1>
+        </div>
+      
+      </div>
+
+      <p style="margin-left:5%;  font-weight: 400;"  class="u-text-custom-color-3" >Contenido:</p>
   
           <div style="width: 90%; margin-left: 5%; margin-right: 5px;">
           <mat-table [dataSource]="dataSource4" class="mat-elevation-z8" >
