@@ -44,10 +44,25 @@
                   <mat-panel-title> <!------           colocar titulo de las tablas deslizantes               -------->
                       Set laparoscopia
                   </mat-panel-title>
-  
-  
               </mat-expansion-panel-header> <!------           colocar contenido dentro de las tablas deslizantes               -------->
                    
+              <div style="width: 100%; display: flex; margin-top: 0; margin-bottom: 40px;">
+                <div style="width: 30%; margin-left:10%; margin-right: 5%;">
+                  <h1>
+                    <span  style="font-size: 1rem; ">Almacén: </span>
+                  </h1>
+                </div>
+                <div style=" width: 40%; margin-left:1%; margin-right: 5%;">
+                  <h1>
+                    <span  style="font-size: 1rem; ">Mínimo de Set´s: 5</span>
+                  </h1>
+                </div>
+                <div style=" width: 40%; margin-left:1%; margin-right: 3%; ">
+                  <h1>
+                    <span  style="font-size: 1rem; ">Máximo de Set´s: 10 </span>
+                  </h1>
+                </div>
+              </div>
   
               <mat-table [dataSource]="dataSource" class="mat-elevation-z8"> <!------           Inicia tabla 1              -------->
            
@@ -71,7 +86,7 @@
                     <mat-cell *matCellDef="let element"> {{element.Marca}} </mat-cell>
                   </ng-container>
                 
-                  <ng-container matColumnDef="Cantidad">
+                  <ng-container matColumnDef="Cantidad" >
                       <mat-header-cell *matHeaderCellDef> Cantidad </mat-header-cell>
                       <mat-cell *matCellDef="let element"> {{element.Cantidad}} </mat-cell>
                     </ng-container>
@@ -96,8 +111,27 @@
                     Set 2
                   </mat-panel-title>
                 </mat-expansion-panel-header> <!------           colocar contenido dentro de las tablas deslizantes               -------->
-               
-              <mat-table [dataSource]="dataSource2" class="mat-elevation-z8">
+                
+                         
+              <div style="width: 100%; display: flex; margin-top: 0; margin-bottom: 40px;">
+                  <div style="width: 30%; margin-left:10%; margin-right: 5%;">
+                    <h1>
+                      <span  style="font-size: 1rem; ">Almacén: </span>
+                    </h1>
+                  </div>
+                  <div style=" width: 40%; margin-left:1%; margin-right: 5%;">
+                    <h1>
+                      <span  style="font-size: 1rem; ">Mínimo de Set´s: 4</span>
+                    </h1>
+                  </div>
+                  <div style=" width: 40%; margin-left:1%; margin-right: 3%; ">
+                    <h1>
+                      <span  style="font-size: 1rem; ">Máximo de Set´s: 8 </span>
+                    </h1>
+                  </div>
+                </div>
+
+              <mat-table [dataSource]="dataSource2" class="mat-elevation-z8">  <!------           Inicia tabla 2              -------->
            
                   <ng-container matColumnDef="id">
                     <mat-header-cell *matHeaderCellDef> ID </mat-header-cell>
@@ -149,7 +183,26 @@
   
                   </mat-expansion-panel-header> <!------           colocar contenido dentro de las tablas deslizantes               -------->
                   
-                  <mat-table [dataSource]="dataSource3" class="mat-elevation-z8">
+                          
+              <div style="width: 100%; display: flex; margin-top: 0; margin-bottom: 40px;">
+                    <div style="width: 30%; margin-left:10%; margin-right: 5%;">
+                      <h1>
+                        <span  style="font-size: 1rem; ">Almacén: </span>
+                      </h1>
+                    </div>
+                    <div style=" width: 40%; margin-left:1%; margin-right: 5%;">
+                      <h1>
+                        <span  style="font-size: 1rem; ">Mínimo de Set´s: 7</span>
+                      </h1>
+                    </div>
+                    <div style=" width: 40%; margin-left:1%; margin-right: 3%; ">
+                      <h1>
+                        <span  style="font-size: 1rem; ">Máximo de Set´s: 16 </span>
+                      </h1>
+                    </div>
+                  </div>
+
+                  <mat-table [dataSource]="dataSource3" class="mat-elevation-z8">  <!------           Inicia tabla 3              -------->
            
                           <ng-container matColumnDef="id">
                           <mat-header-cell *matHeaderCellDef> ID </mat-header-cell>
