@@ -1,0 +1,279 @@
+<mat-tab-group animationDuration="0ms">
+    <mat-tab label="Lista de Set´s"> <!------           contenido de los dos botones              -------->
+
+
+        <mat-accordion><!------           inicia la parte deslizante              -------->
+            <mat-expansion-panel hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title> <!------           colocar titulo de las tablas deslizantes               -------->
+                    Set laparoscopia
+                </mat-panel-title>
+
+
+            </mat-expansion-panel-header> <!------           colocar contenido dentro de las tablas deslizantes               -------->
+                 
+
+            <mat-table [dataSource]="dataSource" class="mat-elevation-z8"> <!------           Inicia tabla 1              -------->
+         
+                <ng-container matColumnDef="id">
+                  <mat-header-cell *matHeaderCellDef> ID </mat-header-cell>
+                  <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+                </ng-container>
+              
+                <ng-container matColumnDef="Nombre">
+                  <mat-header-cell *matHeaderCellDef> Nombre </mat-header-cell>
+                  <mat-cell *matCellDef="let element"> {{element.Nombre}} </mat-cell>
+                </ng-container>
+              
+                <ng-container matColumnDef="Descripcion">
+                  <mat-header-cell *matHeaderCellDef> Descripción </mat-header-cell>
+                  <mat-cell *matCellDef="let element"> {{element.Descripcion}} </mat-cell>
+                </ng-container>
+              
+                <ng-container matColumnDef="Marca">
+                  <mat-header-cell *matHeaderCellDef> Marca </mat-header-cell>
+                  <mat-cell *matCellDef="let element"> {{element.Marca}} </mat-cell>
+                </ng-container>
+              
+                <ng-container matColumnDef="Cantidad">
+                    <mat-header-cell *matHeaderCellDef> Cantidad </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.Cantidad}} </mat-cell>
+                  </ng-container>
+
+                  <ng-container matColumnDef="Caducidad">
+                    <mat-header-cell *matHeaderCellDef> Caducidad </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.Caducidad}} </mat-cell>
+                  </ng-container>
+
+                <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+              </mat-table>
+             
+              <br><br><div align="center"> <img src="https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg" width="150px"></div>
+              <div align="right"><a class="u-border-2 u-border-custom-color-3 u-btn u-button-style u-custom-color-3 u-hover-custom-color-6 u-text-hover-white" >Editar</a></div> 
+            </mat-expansion-panel>
+           
+
+            <mat-expansion-panel hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title> <!------           colocar titulo de las tablas deslizantes               -------->
+                  Set 2
+                </mat-panel-title>
+              </mat-expansion-panel-header> <!------           colocar contenido dentro de las tablas deslizantes               -------->
+             
+            <mat-table [dataSource]="dataSource2" class="mat-elevation-z8">
+         
+                <ng-container matColumnDef="id">
+                  <mat-header-cell *matHeaderCellDef> ID </mat-header-cell>
+                  <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+                </ng-container>
+              
+                <ng-container matColumnDef="Nombre">
+                  <mat-header-cell *matHeaderCellDef> Nombre </mat-header-cell>
+                  <mat-cell *matCellDef="let element"> {{element.Nombre}} </mat-cell>
+                </ng-container>
+              
+                <ng-container matColumnDef="Descripcion">
+                  <mat-header-cell *matHeaderCellDef> Descripción </mat-header-cell>
+                  <mat-cell *matCellDef="let element"> {{element.Descripcion}} </mat-cell>
+                </ng-container>
+              
+                <ng-container matColumnDef="Marca">
+                  <mat-header-cell *matHeaderCellDef> Marca </mat-header-cell>
+                  <mat-cell *matCellDef="let element"> {{element.Marca}} </mat-cell>
+                </ng-container>
+              
+                <ng-container matColumnDef="Cantidad">
+                    <mat-header-cell *matHeaderCellDef> Cantidad </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.Cantidad}} </mat-cell>
+                  </ng-container>
+
+                  <ng-container matColumnDef="Caducidad">
+                    <mat-header-cell *matHeaderCellDef> Caducidad </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.Caducidad}} </mat-cell>
+                  </ng-container>
+
+                <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+              </mat-table>
+
+
+              <br><br><div align="center"> <img src="https://biotronitech.com.co/wp-content/uploads/2021/05/Set-basico-para-diagnostico-y-cirugia-de-senos-paranasales-600x600.jpg" width="150px"></div>
+              <div align="right"><a class="u-border-2 u-border-custom-color-3 u-btn u-button-style u-custom-color-3 u-hover-custom-color-6 u-text-hover-white" >Editar</a></div> 
+
+            </mat-expansion-panel>
+    
+
+            
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                  <mat-panel-title> <!------           colocar titulo de las tablas deslizantes               -------->
+                    Set 3
+                  </mat-panel-title>
+
+                </mat-expansion-panel-header> <!------           colocar contenido dentro de las tablas deslizantes               -------->
+                
+                <mat-table [dataSource]="dataSource3" class="mat-elevation-z8">
+         
+                        <ng-container matColumnDef="id">
+                        <mat-header-cell *matHeaderCellDef> ID </mat-header-cell>
+                        <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+                        </ng-container>
+                    
+                        <ng-container matColumnDef="Nombre">
+                        <mat-header-cell *matHeaderCellDef> Nombre </mat-header-cell>
+                        <mat-cell *matCellDef="let element"> {{element.Nombre}} </mat-cell>
+                        </ng-container>
+                    
+                        <ng-container matColumnDef="Descripcion">
+                        <mat-header-cell *matHeaderCellDef> Descripción </mat-header-cell>
+                        <mat-cell *matCellDef="let element"> {{element.Descripcion}} </mat-cell>
+                        </ng-container>
+                    
+                        <ng-container matColumnDef="Marca">
+                        <mat-header-cell *matHeaderCellDef> Marca </mat-header-cell>
+                        <mat-cell *matCellDef="let element"> {{element.Marca}} </mat-cell>
+                        </ng-container>
+                    
+
+                        <ng-container matColumnDef="Cantidad">
+                            <mat-header-cell *matHeaderCellDef> Cantidad </mat-header-cell>
+                            <mat-cell *matCellDef="let element"> {{element.Cantidad}} </mat-cell>
+                        </ng-container>
+
+                        <ng-container matColumnDef="Caducidad">
+                            <mat-header-cell *matHeaderCellDef> Caducidad </mat-header-cell>
+                            <mat-cell *matCellDef="let element"> {{element.Caducidad}} </mat-cell>
+                        </ng-container>
+
+                        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+                  </mat-table>
+
+                <br><br><div align="center"> <img src="https://ahlfenix.com/wp-content/uploads/2018/11/SET-INSTRUMENTAL-DE-SUTURA.jpg" width="150px"></div>
+              <div align="right"><a class="u-border-2 u-border-custom-color-3 u-btn u-button-style u-custom-color-3 u-hover-custom-color-6 u-text-hover-white" >Editar</a></div> 
+            
+            </mat-expansion-panel>
+
+
+          </mat-accordion><!------           finaliza la parte deslizante             -------->
+
+
+    </mat-tab>
+
+
+
+
+
+
+    <mat-tab label="Creación de Set´s"> <!------           contenido de los dos botones              -------->
+       <div>
+       <label>Nombre:</label>
+       <br> <mat-form-field class="example-form-field">
+         
+            <input matInput type="text" [(ngModel)]="value">
+            @if (value) {
+              <button matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+                <mat-icon>close</mat-icon>
+              </button>
+            }
+          </mat-form-field>
+          <button style="margin-left: 50px;">Agregar</button>
+
+        </div>
+
+
+        <div>
+        <label>Nombre:</label>
+       <br> <mat-form-field class="example-form-field">
+            <mat-select disableRipple>
+              <mat-option value="1">Pinza Halsted</mat-option>
+              <mat-option value="2">Pinza de Pean</mat-option>
+              <mat-option value="3">Pinza Judo-Allis</mat-option>
+              <mat-option value="4">Pinzas Kocher curvas</mat-option>
+              <mat-option value="5">Pinza de Kocher</mat-option>
+              <mat-option value="6">Pinza Mosquito</mat-option>
+              <mat-option value="7">Pinza para campo</mat-option>
+              <mat-option value="8">Pinza para tubo</mat-option>
+              <mat-option value="9">Grosmayer</mat-option>
+              <mat-option value="10">Pinza clamp</mat-option>
+            </mat-select>
+          </mat-form-field>
+       <button style="margin-left: 50px;">Agregar</button>
+        </div>
+       
+
+        <mat-table [dataSource]="dataSource3" class="mat-elevation-z8">
+         
+            <ng-container matColumnDef="id">
+            <mat-header-cell *matHeaderCellDef> ID </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+            </ng-container>
+        
+            <ng-container matColumnDef="Nombre">
+            <mat-header-cell *matHeaderCellDef> Nombre </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.Nombre}} </mat-cell>
+            </ng-container>
+        
+            <ng-container matColumnDef="Descripcion">
+            <mat-header-cell *matHeaderCellDef> Descripción </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.Descripcion}} </mat-cell>
+            </ng-container>
+        
+            <ng-container matColumnDef="Marca">
+            <mat-header-cell *matHeaderCellDef> Marca </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.Marca}} </mat-cell>
+            </ng-container>
+        
+
+            <ng-container matColumnDef="Cantidad">
+                <mat-header-cell *matHeaderCellDef> Cantidad </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.Cantidad}} </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="Caducidad">
+                <mat-header-cell *matHeaderCellDef> Caducidad </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.Caducidad}} </mat-cell>
+            </ng-container>
+
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+      </mat-table>
+
+
+       
+
+      <br><br> <div style="text-align: center;">
+        <img id="imgPreview" class="imaencenter"></div>
+  <style>
+   .imaencenter{
+      align-items: center;
+      margin: auto;
+      width: 150px;
+      height: 150px;
+    }
+  </style>
+
+        <br><div class="u-form u-form-20">
+        
+          <div class="u-form-file-upload u-form-group u-label-left u-form-group-11">
+            <div class="u-file-input-wrapper">
+              <a class="u-btn u-button-style u-upload-button u-custom-color-3 u-hover-custom-color-6">Examinar</a>
+              <div class="u-file-list">
+                <div class="u-file-item u-file-template">
+                </div>
+              </div>
+              <span class="u-file-group">
+                <input type="file" name="Examinar" accept="image/*" onchange="previewImage(event, '#imgPreview')"> </span>
+            </div>
+          </div>
+      </div>
+
+
+
+
+
+
+    </mat-tab>
+  </mat-tab-group>
+  
