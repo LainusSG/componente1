@@ -470,6 +470,10 @@
     height: 339px;
     margin: 19px 20px 0 calc(((100% - 1140px) / 2) + 502px)
   }
+
+  .u-section-1 .u-form-group-18 {
+    margin-left: 0;
+  }
   
   .u-section-1 .u-text-9 {
     font-weight: 500;
