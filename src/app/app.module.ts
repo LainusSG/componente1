@@ -87,14 +87,17 @@ import { HomeAdminComponent } from './home-admin/home-admin.component';
 import { QRCodeModule } from 'angularx-qrcode';
 import { Componente1Component } from './componente1/componente1.component';
 
+import { Componente2Component } from './componente2/componente2.component';
+
+
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatTableModule} from '@angular/material/table';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSelectModule} from '@angular/material/select';
-
-
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatRadioModule} from '@angular/material/radio';
 
 @NgModule({
   declarations: [
@@ -143,6 +146,7 @@ import {MatSelectModule} from '@angular/material/select';
     Bienvenida2Component,
     HomeAdminComponent,
     Componente1Component,
+    Componente2Component,
    
 
    
@@ -168,7 +172,8 @@ import {MatSelectModule} from '@angular/material/select';
     MatSelectModule,
     MatInputModule,
     MatButtonModule,
-
+    MatCheckboxModule,
+    MatRadioModule,
    
   ],
   providers: [

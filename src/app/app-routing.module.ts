@@ -74,6 +74,7 @@ import { Home2Component } from './home-2/home-2.component';
 
 
 import { Componente1Component } from './componente1/componente1.component';
+import { Componente2Component } from './componente2/componente2.component';
 
 
 
@@ -90,7 +91,8 @@ const routes: Routes = [
           { path: 'Reconocimiento-Facial', component: RECONOCIMIENTOFACIALComponent },
           { path: 'bienvenida', component:BIENVENIDAComponent },
           { path: 'bienvenida-quirofano', component: Bienvenida2Component},
-          { path: '2' , component: Componente1Component}
+          { path: '2' , component: Componente1Component},
+          { path: '3' , component: Componente2Component}
                 ]
   },
 //------------------programacion de cirugia--------------------- modulo 1
