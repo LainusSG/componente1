@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 export class Componente2Component {
   checked = false;
   indeterminate = false;
-  labelPosition: 'Media' | 'Alta' = 'Alta';
+
   disabled = false;
 }
